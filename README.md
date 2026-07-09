@@ -1,8 +1,6 @@
 # PxlPop
 ## Intro
-In de [vorige opdracht](https://github.com/PXL-CSMobile/PxlPop-ViewsAndStyleshttps://github.com/PXL-CSMobile/PxlPop-ViewsAndStyles) werden de verschillende *ContentPages* van de nodige *Views* voorzien. In dit deel zullen we de applicatie voorzien van een *CollectionView* en een *TableView*
-
-Optioneel kan je een tweede CollectionView toevoegen aan de *FavouritesPage*.
+In de [vorige opdracht](https://github.com/PXL-CSMobile/PxlPop-ViewsAndStyles) werden de verschillende *ContentPages* van de nodige *Views* voorzien. In dit deel zullen we de applicatie voorzien van een *CollectionView*
 
 ## LineupPage
 - Voeg een *CollectionView* toe aan de *LineupPage* 
