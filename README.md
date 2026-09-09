@@ -7,7 +7,7 @@ Optioneel kan je een tweede CollectionView toevoegen aan de *FavouritesPage*.
 ## LineupPage
 - Voeg een *CollectionView* toe aan de *LineupPage* 
 - Gebruik de ```LessonData.GenerateLessonsAsync()``` om de data voor de line-up op te halen
-- Implementeer een filter om de lessen per departement te tonen, maak gebruik van de bestaande *Picker* in de *LineupPage
+- Implementeer een filter om de lessen per departement te tonen, maak gebruik van de bestaande `Picker` in de *LineupPage*
 - Sorteer de lessen per dag op startuur
 - Voorzie een [*ActivityIndicator*](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/activityindicator) om te tonen terwijl de data geladen wordt
 - Toon voor elk item:
