@@ -8,6 +8,19 @@
         <Label Text="Pxlpop Festival" Style="{StaticResource ShellTitle}"></Label>
     </Shell.TitleView>
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+			Text="Add"
+			Order="Primary"
+			Priority="0"
+			Clicked="OnSettingsClicked">
+            <ToolbarItem.IconImageSource>
+                    <mi:FontAwesomeSolid Icon="Gear" IconSize="Large" IconColor="White" />
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+
+    </ContentPage.ToolbarItems>
+
     <ScrollView>
         <Grid>
             <Grid.RowDefinitions>
@@ -28,16 +41,36 @@
                 Grid.Row="1"
                 Style="{StaticResource PageLayout}">
 
-                <Button Text="Line-up" Clicked="OnLineupClicked"
-                        ImageSource="{mi:FontAwesomeSolid Icon=Music, IconSize=Large, IconColor={AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}}" />
-                <Button Text="Info" Clicked="OnInfoClicked"
-                        ImageSource="{mi:FontAwesomeSolid Icon=CircleInfo, IconSize=Large, IconColor={AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}}"/>
-                <Button Text="Favorieten" Clicked="OnFavouritesClicked"
-                        ImageSource="{mi:FontAwesomeSolid Icon=Heart, IconSize=Large, IconColor={AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}}"/>
-                <Button Text="Tickets" Clicked="OnTicketsClicked"
-                        ImageSource="{mi:FontAwesomeSolid Icon=Ticket, IconSize=Large, IconColor={AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}}"/>
-                <Button Text="Account" Clicked="OnAccountClicked"
-                        ImageSource="{mi:FontAwesomeSolid Icon=CircleUser, IconSize=Large, IconColor={AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}}" />
+                <Button Text="Line-up" Clicked="OnLineupClicked">
+                    <Button.ImageSource>
+                        <mi:FontAwesomeSolid Icon="Music" IconSize="Large" IconColor="{AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}" />
+                    </Button.ImageSource>
+                </Button>
+
+                <Button Text="Info" Clicked="OnInfoClicked">
+                    <Button.ImageSource>
+                        <mi:FontAwesomeSolid Icon="CircleInfo" IconSize="Large" IconColor="{AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}" />
+                    </Button.ImageSource>
+                </Button>
+
+                <Button Text="Favorieten" Clicked="OnFavouritesClicked">
+                    <Button.ImageSource>
+                        <mi:FontAwesomeSolid Icon="Heart" IconSize="Large" IconColor="{AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}" />
+                    </Button.ImageSource>
+                </Button>
+
+                <Button Text="Tickets" Clicked="OnTicketsClicked">
+                    <Button.ImageSource>
+                        <mi:FontAwesomeSolid Icon="Ticket" IconSize="Large" IconColor="{AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}" />
+                    </Button.ImageSource>
+                </Button>
+
+                <!--<Button Text="Account" Clicked="OnAccountClicked">
+                    <Button.ImageSource>
+                        <mi:FontAwesomeSolid Icon="CircleUser" IconSize="Large" IconColor="{AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}" />
+                    </Button.ImageSource>
+                </Button>-->
+
             </VerticalStackLayout>
         </Grid>
     </ScrollView>

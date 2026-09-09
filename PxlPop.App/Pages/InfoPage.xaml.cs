@@ -8,6 +8,6 @@ public partial class InfoPage : ContentPage
 	{
 		InitializeComponent();
 
-        _ = new MauiIcon(); // Bugfix for MauiIcon
+        //_ = new MauiIcon(); // Bugfix for MauiIcon
     }
 }

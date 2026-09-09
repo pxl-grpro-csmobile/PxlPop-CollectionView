@@ -1,8 +1,8 @@
 namespace PxlPop.App.Pages;
 
-public partial class AccountPage : ContentPage
+public partial class SettingsPage : ContentPage
 {
-	public AccountPage()
+	public SettingsPage()
 	{
 		InitializeComponent();
 	}

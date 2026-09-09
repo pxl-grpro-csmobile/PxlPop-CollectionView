@@ -6,14 +6,12 @@ namespace PxlPop.App
         public App()
         {
             InitializeComponent();
-
-            MainPage = new AppShell();
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
             this.UserAppTheme = AppTheme.Light;
-            return base.CreateWindow(activationState);
+            return new Window(new AppShell());
         }
     }
 }

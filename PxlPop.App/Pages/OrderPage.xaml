@@ -16,44 +16,44 @@
         </Grid.RowDefinitions>
         <ScrollView>
             <VerticalStackLayout Style="{StaticResource PageLayout}">
-            <Label Text="Gegevens" Style="{StaticResource Title}"/>
-            <BoxView Color="{StaticResource Primary}"
-                    HeightRequest="2"
-                    HorizontalOptions="Fill" />
-                <Label Text="Voornaam" />
-            <Entry x:Name="firstNameEntry"/>
-            <Label Text="Achternaam" />
-            <Entry x:Name="lastNameEntry"/>
-            <Label Text="GSM/Telefoon" />
-            <Entry x:Name="phoneEntry"/>
-            <Label Text="E-mail" />
-            <Entry x:Name="emailEntry" >
-                <Entry.Behaviors>
-                    <toolkit:EmailValidationBehavior 
-                        InvalidStyle="{StaticResource InvalidEntry}"
-                        ValidStyle="{StaticResource ValidEntry}"
-                        Flags="ValidateOnValueChanged" />
-                </Entry.Behaviors>
-            </Entry>
-            <HorizontalStackLayout>
-                <CheckBox x:Name="viaEmailCheckBox" IsChecked="False" CheckedChanged="OnEmailCheckedChanged"/>
-                <Label Text="Verstuur tickets via email" TextColor="Green" VerticalOptions="Center"/>
-            </HorizontalStackLayout>
-
-            <VerticalStackLayout x:Name="addressLayout" Spacing="15" IsVisible="True">
-                <Label Text="Levering" Style="{StaticResource Title}"/>
+                <Label Text="Gegevens" Style="{StaticResource Title}"/>
                 <BoxView Color="{StaticResource Primary}"
                     HeightRequest="2"
                     HorizontalOptions="Fill" />
-                <Label Text="Leverdatum"/>
-                <DatePicker x:Name="deliveryDatePicker" HorizontalOptions="Fill" />
-                <Label Text="Adres" />
-                <Entry x:Name="addressEntry"/>
-                <Entry x:Name="zipEntry" Placeholder="postcode"/>
-                <Entry x:Name="cityEntry" Placeholder="stad/gemeente"/>
-            </VerticalStackLayout>
+                <Label Text="Voornaam" />
+                <Entry x:Name="firstNameEntry"/>
+                <Label Text="Achternaam" />
+                <Entry x:Name="lastNameEntry"/>
+                <Label Text="GSM/Telefoon" />
+                <Entry x:Name="phoneEntry"/>
+                <Label Text="E-mail" />
+                <Entry x:Name="emailEntry" >
+                    <Entry.Behaviors>
+                        <toolkit:EmailValidationBehavior 
+                        InvalidStyle="{StaticResource InvalidEntry}"
+                        ValidStyle="{StaticResource ValidEntry}"
+                        Flags="ValidateOnValueChanged" />
+                    </Entry.Behaviors>
+                </Entry>
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="viaEmailCheckBox" IsChecked="False" CheckedChanged="OnEmailCheckedChanged"/>
+                    <Label Text="Verstuur tickets via email" TextColor="Green" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
 
-                
+                <VerticalStackLayout x:Name="addressLayout" Spacing="15" IsVisible="True">
+                    <Label Text="Levering" Style="{StaticResource Title}"/>
+                    <BoxView Color="{StaticResource Primary}"
+                    HeightRequest="2"
+                    HorizontalOptions="Fill" />
+                    <Label Text="Leverdatum"/>
+                    <DatePicker x:Name="deliveryDatePicker" HorizontalOptions="Fill" />
+                    <Label Text="Adres" />
+                    <Entry x:Name="addressEntry"/>
+                    <Entry x:Name="zipEntry" Placeholder="postcode"/>
+                    <Entry x:Name="cityEntry" Placeholder="stad/gemeente"/>
+                </VerticalStackLayout>
+
+
             </VerticalStackLayout>
         </ScrollView>
         <Button Text="Betalen" Grid.Row="1"

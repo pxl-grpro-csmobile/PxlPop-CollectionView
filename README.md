@@ -1,6 +1,6 @@
 # PxlPop
 ## Intro
-In de [vorige opdracht](https://github.com/PXL-CSMobile/PxlPop-ViewsAndStyleshttps://github.com/PXL-CSMobile/PxlPop-ViewsAndStyles) werden de verschillende *ContentPages* van de nodige *Views* voorzien. In dit deel zullen we de applicatie voorzien van een *CollectionView* en een *TableView*
+In de [vorige opdracht](https://github.com/pxl-grpro-csmobile/PxlPop-ViewsAndStyles) werden de verschillende *ContentPages* van de nodige *Views* voorzien. In dit deel zullen we de applicatie voorzien van een *CollectionView* en een *TableView*
 
 Optioneel kan je een tweede CollectionView toevoegen aan de *FavouritesPage*.
 
@@ -22,15 +22,8 @@ Optioneel kan je een tweede CollectionView toevoegen aan de *FavouritesPage*.
 
 <img src="media/lineupcollectionview.png" height="600">
 
-## AcountPage
-- Vervang de bestaande LayoutView door een TableView
-- Maak een eerste *TableSection* met de tekst *Account*
-- Voeg aan deze sectie een EntryCell toe met het Label *Gebruikersnaam*
-- Voorzie een *TableSection* met de titel *Weergave*
-- Gebruik een SwitchCell om de bestaande Switch voor *dark mode* te vervangen, zorg dat de functionaliteit behouden blijft
-- Voeg in dezelfde section een ViewCell toe met een *Label* en een *Picker* waarmee de gebruiker de gewenste taal kan selecteren. (Nederlands of English)
-- Voeg een tweede *TableSection* toe met de titel *Meldingen*
-- Voeg aan deze sectie opnieuw een SwitchCell toe *Meldingen toestaan*
+## SettingsPage
+- Breidt de SettingsPage uit met 2 Labels en een extra Switch
 - Toon een [Toast alert](https://learn.microsoft.com/en-us/dotnet/communitytoolkit/maui/alerts/toast) elke keer als deze Switch aan of uit gezet wordt
 
 > Later in de cursus leren we hoe we deze instellingen lokaal kunnen bewaren

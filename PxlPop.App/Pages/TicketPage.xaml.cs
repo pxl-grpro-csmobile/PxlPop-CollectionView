@@ -8,7 +8,7 @@ public partial class TicketPage : ContentPage
 	{
 		InitializeComponent();
 
-        _ = new MauiIcon(); // Bugfix for MauiIcon
+        //_ = new MauiIcon(); // Bugfix for MauiIcon
     }
 
     private async void OnOrderClicked(object sender, EventArgs e)
